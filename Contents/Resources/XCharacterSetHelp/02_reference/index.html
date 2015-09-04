@@ -1,18 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
+		<title>XCharacterSet Reference</title>
+		
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<meta content="noindex" name="robots" />
-		<title>XCharacterSet Help</title>
+		<link href="assets/default.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="XCharacterSet, AppleScript" />
+		<script type="text/javascript" src="assets/run_helpscript.js"></script>
+		<script type="text/javascript" src="assets/navibar-jump.js"></script>
+		<link href="../" id="HelpBookRoot" />
 	</head>
 
-	<frameset cols="230,9,*" border="0" frameborder="no" framespacing="0">
-		<frame name="TOC" src="toc.html" noresize="noresize" />
-		<frame name="Shadow" src="../pages/shadow.html" noresize="noresize" scrolling="no" />
-		<frame name="Content" src="contents.html" />
-	</frameset>
+	<body>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+				<a onclick="return runHelpScriptWithBundleRoot(this)" href="assets/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+				<!-- InstanceBeginEditable name="to-root" --><a href="../index.html">XCharacterSet Help</a><!-- InstanceEndEditable -->
+			</div>
+			<select onchange="navibarJump(this)">
+<option value="">
+§
+</option>
+<option value="#Constructors">
+Constructors
+</option>
+<option value="#make">
+- make
+</option>
+<option value="#make_with">
+- make_with
+</option>
+<option value="#make_whitespaces">
+- make_whitespaces
+</option>
+<option value="#make_newlines">
+- make_newlines
+</option>
+<option value="#make_whites_newlines">
+- make_whites_newlines
+</option>
+<option value="#make_numerics">
+- make_numerics
+</option>
+<option value="#make_upper_alphabets">
+- make_upper_alphabets
+</option>
+<option value="#make_lower_alphabets">
+- make_lower_alphabets
+</option>
+<option value="#make_alphanumerics">
+- make_alphanumerics
+</option>
+<option value="#make_graphic_chars">
+- make_graphic_chars
+</option>
+<option value="#Instance_Methods">
+Instance Methods
+</option>
+<option value="#is_member">
+- is_member
+</option>
+<option value="#push">
+- push
+</option>
+<option value="#push_whitespaces">
+- push_whitespaces
+</option>
+<option value="#push_newlines">
+- push_newlines
+</option>
+<option value="#push_numerics">
+- push_numerics
+</option>
+<option value="#push_upper_alphabets">
+- push_upper_alphabets
+</option>
+<option value="#push_lower_alphabets">
+- push_lower_alphabets
+</option>
+<option value="#push_controls">
+- push_controls
+</option>
+<option value="#push_characters_in_range">
+- push_characters_in_range
+</option>
+<option value="#push_ascii_in_range">
+- push_ascii_in_range
+</option>
+</select>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><div class="prev-next-item"><a href="../01_synopsis/index.html"><span class="navibar-prev">Synopsis</span></a>|<a href="../03_history/index.html"><span class="navibar-next">History</span></a></div><!-- InstanceEndEditable -->
+		<div id="contents">
+		<h1>XCharacterSet Reference</h1>
+<ul>
+<li>Version : 1.1.1</li>
+<li>Author : Tetsuro KURITA <a href="mailto:tkurita@mac.com">tkurita@mac.com</a></li>
+</ul>
+<p>XCharacterSet represent a character set object consisting of specified characters. </p>
+<h2 id="Constructors">Constructors</h2>
+<h3 id="make"><a href="pages/make.html">make</a></h3>
+<p>Make an instance of XCharacterSet object.</p>
+<h3 id="make_with"><a href="pages/make_with.html">make_with</a></h3>
+<p>Make an instance of XCharacterSet object given a character list.</p>
+<h3 id="make_whitespaces"><a href="pages/make_whitespaces.html">make_whitespaces</a></h3>
+<p>Make an instance of XCharacterSet object for white spaces e.g. space and tab.</p>
+<h3 id="make_newlines"><a href="pages/make_newlines.html">make_newlines</a></h3>
+<p>Make an instance of XCharacterSet object for new line characters e.g. return and line feed.</p>
+<h3 id="make_whites_newlines"><a href="pages/make_whites_newlines.html">make_whites_newlines</a></h3>
+<p>Make an instance of XCharacterSet object for white spaces and new line characters e.g. space, tab, return and line feed.</p>
+<h3 id="make_numerics"><a href="pages/make_numerics.html">make_numerics</a></h3>
+<p>Make an instance of XCharacterSet object for numerical characters i.e.&quot;0&quot;, &quot;1&quot;, &quot;2&quot; ... &quot;8&quot;, &quot;9&quot;</p>
+<h3 id="make_upper_alphabets"><a href="pages/make_upper_alphabets.html">make_upper_alphabets</a></h3>
+<p>Make an instance of XCharacterSet object for upper alphabetical characters i.e.&quot;A&quot;, &quot;B&quot;,...,&quot;Y&quot;,&quot;Z&quot;</p>
+<h3 id="make_lower_alphabets"><a href="pages/make_lower_alphabets.html">make_lower_alphabets</a></h3>
+<p>Make an instance of XCharacterSet object for lower alphabetical characters i.e.&quot;a&quot;, &quot;b&quot;,...,&quot;y&quot;,&quot;z&quot;</p>
+<h3 id="make_alphanumerics"><a href="pages/make_alphanumerics.html">make_alphanumerics</a></h3>
+<p>Make an instance of XCharacterSet object for all alphabetical and numerical characters i.e.&quot;0&quot;-&quot;9&quot;, &quot;a&quot;-&quot;z&quot;, &quot;A&quot;-&quot;Z&quot;</p>
+<h3 id="make_graphic_chars"><a href="pages/make_graphic_chars.html">make_graphic_chars</a></h3>
+<p>Make an instance of XCharacterSet object for graphic characters i.e. characters in the range from 33 to 126 and characters in the range from 128 to 255.</p>
+<h2 id="Instance_Methods">Instance Methods</h2>
+<h3 id="is_member"><a href="pages/is_member.html">is_member</a></h3>
+<p>Check whether all characters of given text are members of the character set object or not</p>
+<h3 id="push"><a href="pages/push.html">push</a></h3>
+<p>Append specified characters to the character set object</p>
+<h3 id="push_whitespaces"><a href="pages/push_whitespaces.html">push_whitespaces</a></h3>
+<p>Append white spaces (space, tab) to the character set object.</p>
+<h3 id="push_newlines"><a href="pages/push_newlines.html">push_newlines</a></h3>
+<p>Append new line characters (return, line feed) to the character set object.</p>
+<h3 id="push_numerics"><a href="pages/push_numerics.html">push_numerics</a></h3>
+<p>Append numerical characters (0-9) to the character set object.</p>
+<h3 id="push_upper_alphabets"><a href="pages/push_upper_alphabets.html">push_upper_alphabets</a></h3>
+<p>Append upper alphabetical characters (A-Z) to the character set object.</p>
+<h3 id="push_lower_alphabets"><a href="pages/push_lower_alphabets.html">push_lower_alphabets</a></h3>
+<p>Append lower alphabetical characters (a-z) to the character set object.</p>
+<h3 id="push_controls"><a href="pages/push_controls.html">push_controls</a></h3>
+<p>Append ascii control characters to the character set object. Control characters are in the range from 0 to 32 and 127.</p>
+<h3 id="push_characters_in_range"><a href="pages/push_characters_in_range.html">push_characters_in_range</a></h3>
+<p>Append characters specified with a range of id to the character set object.</p>
+<h3 id="push_ascii_in_range"><a href="pages/push_ascii_in_range.html">push_ascii_in_range</a></h3>
+<p>Append ascii characters specified with a range to the character set object.</p>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><div class="prev-next-item"><a href="../01_synopsis/index.html"><span class="navibar-prev">Synopsis</span></a>|<a href="../03_history/index.html"><span class="navibar-next">History</span></a></div><!-- InstanceEndEditable -->
+	</body>
 
 </html>

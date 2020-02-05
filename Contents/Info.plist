@@ -9,22 +9,30 @@
 	<key>CFBundleHelpBookName</key>
 	<string>XCharacterSet Help</string>
 	<key>CFBundleIdentifier</key>
-	<string>Scriptfactory.XCharacterSet</string>
+	<string>net.script-factory.XCharacterSet</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1r2</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.1r2</string>
+	<string>6</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2015, Tetsuro KURITA</string>
+	<string>copyright 2007-2020, Kurita Tetsuro</string>
 	<key>WindowState</key>
 	<dict>
+		<key>bundleDividerCollapsed</key>
+		<false/>
+		<key>bundlePositionOfDivider</key>
+		<real>512</real>
+		<key>dividerCollapsed</key>
+		<false/>
+		<key>eventLogLevel</key>
+		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
 		<real>517</real>
 		<key>savedFrame</key>
-		<string>3 159 512 719 0 0 1440 878 </string>
-		<key>selectedTabView</key>
+		<string>373 142 811 719 0 0 1440 877 </string>
+		<key>selectedTab</key>
 		<string>result</string>
 	</dict>
 </dict>
